@@ -1,0 +1,63 @@
+:root {
+  --background: #f9f9f9;
+  --text-color: #333;
+  --link-color: #0066cc;
+  --link-hover-color: #0056b3;
+  --button-bg: #0066cc;
+  --button-hover-bg: #0056b3;
+  --footer-bg: #333;
+  --footer-text: #fff;
+}
+
+[data-theme='dark'] {
+  --background: #333;
+  --text-color: #f9f9f9;
+  --link-color: #00aaff;
+  --link-hover-color: #0099dd;
+  --button-bg: #444;
+  --button-hover-bg: #555;
+  --footer-bg: #444;
+  --footer-text: #f9f9f9;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  background: var(--background);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+button {
+  background-color: var(--button-bg);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  text-align: center;
+  padding: 1rem 0;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
